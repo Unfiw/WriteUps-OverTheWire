@@ -1,0 +1,228 @@
+Bandit Game Write Up
+
+Bandit 0
+cat readme
+NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+
+Bandit 1
+cat ./-
+cat /home/bandit1/*
+cat /home/bandit1/-
+cat ./*
+
+rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+
+Bandit 2 
+cat ./spaces\ in\ this\ filename 
+cat ./*
+
+aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+
+Bandit 3 
+cat inhere/.hidden
+2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+
+Bandit 4
+file inhere/*
+cat inhere/-file0
+
+lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+
+Bandit 5 
+find . -type f -readable ! -executable -size 1033c | xargs cat | xargs
+P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+
+Bandit 6 
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null | xargs cat
+z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+
+Bandit 7 
+awk "/millionth/" data.txt | awk 'NF{print $NF}'
+TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+
+Bandit 8 
+sort data.txt | uniq -u 
+EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+
+Bandit 9 
+strings data.txt | grep "===" | tail -1 | awk 'NF{print $NF}'
+G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+
+Bandit 10 
+base64 -d data.txt | awk 'NF{print $NF}'
+6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+
+Bandit 11 
+cat data.txt | tr '[G-ZA-Fg-za-f]' '[T-ZA-St-za-s]' | awk 'NF{print $NF}'
+JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+
+Bandit 12
+./decompressor.sh
+wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+
+
+Bandit 13 
+touch id_rsa
+chmod 600 id_rsa
+ssh -i id_rsa bandit14@bandit.labs.overthewire.org -p 2220
+cat /etc/bandit_pass/bandit14
+fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+
+Bandit 14 
+
+echo '' > /dev/tcp/127.0.0.1/30000 2>/dev/null && echo [ * ] Puerto abierto || [ * ] Puerto cerrado
+
+bash -c 'echo '' > /dev/tcp/127.0.0.1/30000' 2>/dev/null && echo [ * ] Puerto abierto || [ * ] Puerto cerrado
+
+echo 'fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq' | nc localhost 30000
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+
+telnet localhost 30000 -> fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq -> jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+
+Bandit 15
+openssl s_client -connect 127.0.0.1:30001 -> jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt (Bandit 15) -> JQttfApK4SeyHwDlI9SXGR50qclOAil1
+
+Bandit 16 
+nmap --open -T5 -n -v -p31000-32000
+openssl s_client -connect 127.0.0.1:31790
+touch id_rsa
+chmod 600 id_rsa
+ssh -i id_rsa bandit14@bandit.labs.overthewire.org -p 2220
+
+cat /etc/bandit_pass/bandit17
+VwOSWtCA7lRKkTfbr2IDh6awj9RNZM5e
+
+Bandit 17 
+diff passwords.old  passwords.new
+hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
+
+Bandit 18 
+ssh bandit18@bandit.labs.overthewire.org -p 2220 -t /bin/sh 
+cat readme 
+awhqfNnAbc1naukrpqDYcF95h7HoMTrC
+
+Bandit 19 
+
+./bandit20-do bash -p 
+
+./bandit20-do cat /etc/bandit_pass/bandit20 
+VxCazJaVykI6W36BkBU0mJTCM8rR95XT
+
+Bandit 20 
+./suconnect 9999    /\/\/\/\/\  nc -nlvp 9999 -> VxCazJaVykI6W36BkBU0mJTCM8rR95XT
+NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
+
+Bandit 21
+cat /etc/cron.d/cronjob_bandit22
+cat /usr/bin/cronjob_bandit22.s 
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+
+WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
+
+Bandit 22 
+cat /etc/cron.d/cronjob_bandit23
+cat /usr/bin/cronjob_bandit23.sh
+echo I am user bandit23 | md5sum | cut -d ' ' -f 1 -> 8ca319486bfbbc3663ea0fbe81326349
+
+cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+
+QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G
+
+Bandit 23 
+cat /etc/cron.d/cronjob_bandit24
+cat /usr/bin/cronjob_bandit24.sh 
+
+mktemp -d 
+cd /tmp/------------
+chmod 777 .
+touch script.sh 
+chmod 777 script.sh -> #!/bin/bash cat /etc/bandit_pass/bandit24 > /tmp/-----/password 
+cat password 
+VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar
+
+Bandit 24 
+
+cd /tmp/------------
+chmod 777 .
+touch script.sh 
+chmod 777 script.sh -> #!/bin/bash for i in {0000..9999} do echo "VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar $i"
+
+./script.sh > data.txt 
+cat data.txt | nc localhost 30002 | grep -v "Wrong\|Please"
+
+p7TaowMYrmu23Ol8hiZh9UvD0O9hpx8d
+
+Bandit 25
+ssh -i id_rsa bandit26@bandit.labs.overthewire.org -p 2220 -> Abbusing more command -> Minime the terminal -> press v 
+:e /etc/bandit_pass/bandit26 
+c7GvcKlw9mC7aUQaPx7nwFstuAIBw1o1
+
+ssh -i id_rsa bandit26@bandit.labs.overthewire.org -p 2220 -> Abbusing more command -> Minime the terminal -> press v 
+:set shell=/bin/bash 
+
+:shell -> Bandit 26
+
+./bandit27-do cat /etc/bandit_pass/bandit27      or ./bandit27-do bash -p
+YnQpBuifNMas1hcUFk70ZmqkhUU2EuaS
+
+Bandit 27 
+mktemp -d 
+cd /tmp/-------
+git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo
+cd repo 
+cat README 
+AVanL161y9rsbcJIsFHuw35rjaOM19nR
+
+Bandit 28 
+mktemp -d 
+cd /tmp/-------
+git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo
+cd repo 
+cat README.md 
+git log -p 
+tQKvmcwNYcFS6vmPHIUSI3ShmsrQZK8S
+
+Bandit 29 
+mktemp -d 
+cd /tmp/-------
+git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo
+cd repo 
+cat README.md 
+git branch -r 
+git checkout dev 
+git log -p
+xbhV3HpNGlTIdnjUrdAlPzc2L6y9EOnS
+
+Bandit 30 
+mktemp -d 
+cd /tmp/-------
+git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo
+cd repo 
+cat README.md 
+git tag 
+git show secret
+OoffzGDlzhAlerFJ2cAiz1D41JW1Mhmt
+
+Bandit 32 
+mktemp -d 
+cd /tmp/-------
+git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo
+cd repo 
+cat README.md 
+git log -p 
+touch key.txt 
+echo "May I come in?" > key.txt 
+git add key.txt 
+git commit -m "Key.txt"
+git push
+rmCBvG56y58BXzv98yZGdO7ATVL5dW8y
+
+Bandit 33 
+$? -> whoami -> bandit33 
+cat /etc/bandit_pass/bandit33
+odHo63fHiFqcWWJG9rLiLDtPm45KzUKy
+
+Bandit 34
+cat README.txt 
+
+FINISH!
